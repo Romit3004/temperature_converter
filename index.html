@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp_converter.css">
+</head>
+<body>
+
+    <section class = "main">
+
+        <section class="converter">
+            <h1>Enter temperature</h1>
+            <h3>Degree</h3>
+            <div class="enterTemperature">
+                <input type="text" id= "number">
+                <select name="options" id="options">
+                    <option value="degree">&#176;C</option>
+                    <option value="fahrenheit">&#176;F</option>
+                </select>
+            </div>
+            <h3>Convert in</h3>
+            <select name="conversion" id="conversion">
+                <option value="Fahrenheit">Fahrenheit(&#176;F)</option>
+                <option value="Degree">Degree(&#176;C)</option>
+            </select>
+            <button class="convert" onclick = "convertTemp()">
+                Convert <span class="arrow">&rarr;</span> 
+            </button>
+        </section>
+
+        <section class="display">
+            <h1 class="result">32&#176;F</h1>
+        </section>
+    </section>
+
+    <script src="temp_converter.js"></script>
+</body>
+</html>
